@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test runner]" parallel="classes">
+  <test name="Package with subpackages(failed)" parallel="classes">
+    <classes>
+      <class name="httprestassure.Test3">
+        <methods>
+          <include name="test_05"/>
+        </methods>
+      </class> <!-- httprestassure.Test3 -->
+    </classes>
+  </test> <!-- Package with subpackages(failed) -->
+</suite> <!-- Failed suite [Test runner] -->

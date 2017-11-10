@@ -1,22 +1,25 @@
 package weatherResponse;
 
-import com.fasterxml.jackson.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "id",
         "main",
         "description",
-        "icon",
+        "icon"
 })
-
 public class Weather {
 
     @JsonProperty("id")
-    private Integer id;
+    private Long id;
     @JsonProperty("main")
     private String main;
     @JsonProperty("description")
@@ -26,10 +29,21 @@ public class Weather {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    /**
+     * No args constructor for use in serialization
+     *
+     */
     public Weather() {
     }
 
-    public Weather(Integer id, String main, String description, String icon) {
+    /**
+     *
+     * @param id
+     * @param icon
+     * @param description
+     * @param main
+     */
+    public Weather(Long id, String main, String description, String icon) {
         super();
         this.id = id;
         this.main = main;
@@ -38,12 +52,12 @@ public class Weather {
     }
 
     @JsonProperty("id")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -86,4 +100,5 @@ public class Weather {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+
 }

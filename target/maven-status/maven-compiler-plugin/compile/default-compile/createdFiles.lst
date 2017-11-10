@@ -1,12 +1,12 @@
 parsers\JsonParser.class
 weatherResponse\Main.class
 elevation\Result.class
-weatherResponse\WeatherResponseModel.class
 weatherResponse\Weather.class
 elevation\Elevation.class
 weatherResponse\Wind.class
 assure\RestAssuredHttpClient.class
 DistanceMatrixResponse\DistanceMatrixResponseModel.class
+utils\Log.class
 DistanceMatrixResponse\Duration.class
 DistanceMatrixResponse\Row.class
 elevation\Location.class
@@ -16,3 +16,4 @@ scenariosstates\WeatherByCity.class
 weatherResponse\Clouds.class
 DistanceMatrixResponse\Distance.class
 weatherResponse\Coord.class
+weatherResponse\WeatherByCityResponseModel.class

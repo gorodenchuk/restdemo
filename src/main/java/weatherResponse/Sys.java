@@ -1,9 +1,13 @@
 package weatherResponse;
 
-import com.fasterxml.jackson.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -14,15 +18,14 @@ import java.util.Map;
         "sunrise",
         "sunset"
 })
-
 public class Sys {
 
     @JsonProperty("type")
-    private Integer type;
+    private Long type;
     @JsonProperty("id")
-    private Integer id;
+    private Long id;
     @JsonProperty("message")
-    private Float message;
+    private Double message;
     @JsonProperty("country")
     private String country;
     @JsonProperty("sunrise")
@@ -32,10 +35,23 @@ public class Sys {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    /**
+     * No args constructor for use in serialization
+     *
+     */
     public Sys() {
     }
 
-    public Sys(Integer type, Integer id, Float message, String country, Long sunrise, Long sunset) {
+    /**
+     *
+     * @param message
+     * @param id
+     * @param sunset
+     * @param sunrise
+     * @param type
+     * @param country
+     */
+    public Sys(Long type, Long id, Double message, String country, Long sunrise, Long sunset) {
         super();
         this.type = type;
         this.id = id;
@@ -46,32 +62,32 @@ public class Sys {
     }
 
     @JsonProperty("type")
-    public Integer getType() {
+    public Long getType() {
         return type;
     }
 
     @JsonProperty("type")
-    public void setType(Integer type) {
+    public void setType(Long type) {
         this.type = type;
     }
 
     @JsonProperty("id")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
     @JsonProperty("message")
-    public Float getMessage() {
+    public Double getMessage() {
         return message;
     }
 
     @JsonProperty("message")
-    public void setMessage(Float message) {
+    public void setMessage(Double message) {
         this.message = message;
     }
 
@@ -114,4 +130,5 @@ public class Sys {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+
 }

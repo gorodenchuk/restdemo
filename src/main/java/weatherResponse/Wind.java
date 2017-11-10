@@ -1,29 +1,42 @@
 package weatherResponse;
 
-import com.fasterxml.jackson.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "speed",
         "deg"
 })
-
 public class Wind {
 
     @JsonProperty("speed")
     private Double speed;
     @JsonProperty("deg")
-    private Integer deg;
+    private Long deg;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    /**
+     * No args constructor for use in serialization
+     *
+     */
     public Wind() {
     }
 
-    public Wind(Double speed, Integer deg) {
+    /**
+     *
+     * @param speed
+     * @param deg
+     */
+    public Wind(Double speed, Long deg) {
         super();
         this.speed = speed;
         this.deg = deg;
@@ -40,12 +53,12 @@ public class Wind {
     }
 
     @JsonProperty("deg")
-    public Integer getDeg() {
+    public Long getDeg() {
         return deg;
     }
 
     @JsonProperty("deg")
-    public void setDeg(Integer deg) {
+    public void setDeg(Long deg) {
         this.deg = deg;
     }
 
@@ -58,4 +71,5 @@ public class Wind {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+
 }

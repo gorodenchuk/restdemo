@@ -1,5 +1,6 @@
 package assure;
 
+import apicalls.ApiCall;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
 
@@ -42,6 +43,7 @@ public class RestAssuredHttpClient {
 			throw new Exception("incorrect protocol in endpoint is set");
 		this.basePath = "";
 	}
+
 
 	public String getBaseUri() {
 		return baseUri;

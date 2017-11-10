@@ -1,21 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.721 sec <<< FAILURE! - in TestSuite
-test_05(httprestassure.Test3)  Time elapsed: 1.403 sec  <<< FAILURE!
-com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of weatherResponse.Weather out of START_ARRAY token
- at [Source: java.io.StringReader@fbb0f8e; line: 1, column: 35] (through reference chain: weatherResponse.WeatherResponseModel["weather"])
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:575)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:569)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1121)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:148)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:123)
-	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
-	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2034)
-	at httprestassure.Test3.test_05(Test3.java:94)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.683 sec - in TestSuite

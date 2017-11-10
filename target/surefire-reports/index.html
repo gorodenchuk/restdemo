@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_runner">
-              <span class="suite-name border-failed">Test runner</span>
+              <span class="suite-name border-passed">Test runner</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_runner" class="hide-methods failed suite-Test_runner"> (hide)</a> <!-- hide-methods failed suite-Test_runner -->
-                      <a href="#" panel-name="suite-Test_runner" class="show-methods failed suite-Test_runner"> (show)</a> <!-- show-methods failed suite-Test_runner -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_runner" class="hide-methods passed suite-Test_runner"> (hide)</a> <!-- hide-methods passed suite-Test_runner -->
+                      <a href="#" panel-name="suite-Test_runner" class="show-methods passed suite-Test_runner"> (show)</a> <!-- show-methods passed suite-Test_runner -->
                     </span>
-                    <div class="method-list-content failed suite-Test_runner">
+                    <div class="method-list-content passed suite-Test_runner">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_runner" title="httprestassure.Test3" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Test_runner -->
+                    </div> <!-- method-list-content passed suite-Test_runner -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_runner" class="panel Test_runner">
-          <div class="suite-Test_runner-class-failed">
+          <div class="suite-Test_runner-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">httprestassure.Test3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,30 +128,10 @@
                   <a name="test_05">
                   </a> <!-- test_05 -->
                   <span class="method-name">test_05</span>
-                  <div class="stack-trace">com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of weatherResponse.Weather out of START_ARRAY token
- at [Source: java.io.StringReader@fbb0f8e; line: 1, column: 35] (through reference chain: weatherResponse.WeatherResponseModel[&quot;weather&quot;])
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:575)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:569)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1121)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:148)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:123)
-	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
-	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2034)
-	at httprestassure.Test3.test_05(Test3.java:94)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_runner-class-failed -->
+          </div> <!-- suite-Test_runner-class-passed -->
         </div> <!-- panel Test_runner -->
         <div panel-name="test-xml-Test_runner" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -208,7 +188,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_05')
 data.setCell(0, 2, 'httprestassure.Test3')
-data.setCell(0, 3, 1398);
+data.setCell(0, 3, 1254);
 window.suiteTableData['Test_runner']= { tableData: data, tableDiv: 'times-div-Test_runner'}
 return data;
 }
@@ -241,8 +221,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">httprestassure.Test3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test_05</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

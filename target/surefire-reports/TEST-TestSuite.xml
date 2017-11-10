@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.403" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="1.254" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,28 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test_05" classname="httprestassure.Test3" time="1.403">
-    <failure message="Can not deserialize instance of weatherResponse.Weather out of START_ARRAY token&#10; at [Source: java.io.StringReader@fbb0f8e; line: 1, column: 35] (through reference chain: weatherResponse.WeatherResponseModel[&quot;weather&quot;])" type="com.fasterxml.jackson.databind.JsonMappingException">com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of weatherResponse.Weather out of START_ARRAY token
- at [Source: java.io.StringReader@fbb0f8e; line: 1, column: 35] (through reference chain: weatherResponse.WeatherResponseModel["weather"])
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:575)
-	at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:569)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1121)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:148)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:123)
-	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
-	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2034)
-	at httprestassure.Test3.test_05(Test3.java:94)
-</failure>
-    <system-out><![CDATA[{"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":300,"main":"Drizzle","description":"light intensity drizzle","icon":"09d"}],"base":"stations","main":{"temp":280.32,"pressure":1012,"humidity":81,"temp_min":279.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":4.1,"deg":80},"clouds":{"all":90},"dt":1485789600,"sys":{"type":1,"id":5091,"message":0.0103,"country":"GB","sunrise":1485762037,"sunset":1485794875},"id":2643743,"name":"London","cod":200}
-]]></system-out>
-    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-]]></system-err>
-  </testcase>
+  <testcase name="test_05" classname="httprestassure.Test3" time="1.254"/>
 </testsuite>

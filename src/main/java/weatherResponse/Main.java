@@ -1,9 +1,14 @@
 package weatherResponse;
 
-import com.fasterxml.jackson.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -13,82 +18,93 @@ import java.util.Map;
         "temp_min",
         "temp_max"
 })
-
 public class Main {
 
     @JsonProperty("temp")
-    private Float temp;
+    private Double temp;
     @JsonProperty("pressure")
-    private Integer pressure;
+    private Long pressure;
     @JsonProperty("humidity")
-    private Integer humidity;
+    private Long humidity;
     @JsonProperty("temp_min")
-    private Float temp_min;
+    private Double tempMin;
     @JsonProperty("temp_max")
-    private Float temp_max;
+    private Double tempMax;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    /**
+     * No args constructor for use in serialization
+     *
+     */
     public Main() {
     }
 
-    public Main(Float temp, Integer pressure, Integer humidity, Float temp_min, Float temp_max) {
+    /**
+     *
+     * @param humidity
+     * @param pressure
+     * @param tempMax
+     * @param temp
+     * @param tempMin
+     */
+    public Main(Double temp, Long pressure, Long humidity, Double tempMin, Double tempMax) {
         super();
         this.temp = temp;
         this.pressure = pressure;
         this.humidity = humidity;
-        this.temp_min = temp_min;
-        this.temp_max = temp_max;
+        this.tempMin = tempMin;
+        this.tempMax = tempMax;
     }
 
     @JsonProperty("temp")
-    public Float getTemp() {
+    public Double getTemp() {
         return temp;
     }
 
     @JsonProperty("temp")
-    public void setTemp(Float temp) {
+    public void setTemp(Double temp) {
         this.temp = temp;
     }
 
     @JsonProperty("pressure")
-    public Integer getPressure() {
+    public Long getPressure() {
         return pressure;
     }
 
     @JsonProperty("pressure")
-    public void setPressure(Integer pressure) {
+    public void setPressure(Long pressure) {
         this.pressure = pressure;
     }
 
     @JsonProperty("humidity")
-    public Integer getHumidity() {
+    public Long getHumidity() {
         return humidity;
     }
 
     @JsonProperty("humidity")
-    public void setHumidity(Integer humidity) {
+    public void setHumidity(Long humidity) {
         this.humidity = humidity;
     }
 
     @JsonProperty("temp_min")
-    public Float getTemp_min() {
-        return temp_min;
+    public Double getTempMin() {
+        return tempMin;
     }
 
     @JsonProperty("temp_min")
-    public void setTemp_min(Float temp_min) {
-        this.temp_min = temp_min;
+    public void setTempMin(Double tempMin) {
+        this.tempMin = tempMin;
     }
 
     @JsonProperty("temp_max")
-    public Float getTemp_max() {
-        return temp_max;
+    public Double getTempMax() {
+        return tempMax;
     }
 
     @JsonProperty("temp_max")
-    public void setTemp_max(Float temp_max) {
-        this.temp_max = temp_max;
+    public void setTempMax(Double tempMax) {
+        this.tempMax = tempMax;
     }
 
     @JsonAnyGetter
@@ -100,4 +116,5 @@ public class Main {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+
 }

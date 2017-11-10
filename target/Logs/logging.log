@@ -1,0 +1,255 @@
+2017-11-10 12:30:23 INFO  Test3:86 - 2643743
+2017-11-10 12:31:16 INFO  Test3:86 - 2643743
+2017-11-10 13:59:08 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 13:59:08 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 13:59:08 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 13:59:09 INFO  Log:16 - Respone code: 200
+2017-11-10 13:59:09 INFO  Log:16 - Response is
+: {
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+2017-11-10 16:07:30 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:07:30 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:07:30 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:07:31 INFO  Log:16 - Respone code: 200
+2017-11-10 16:07:31 INFO  Log:16 - Response is
+: {
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+2017-11-10 16:16:11 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:16:11 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:16:11 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:16:12 INFO  Log:16 - Respone code: 200
+2017-11-10 16:16:12 INFO  Log:16 - Response is
+: {
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+2017-11-10 16:20:05 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:20:11 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:20:17 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:20:44 INFO  Log:16 - Respone code: 200
+2017-11-10 16:20:49 INFO  Log:16 - Response is
+: {
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+2017-11-10 16:27:43 INFO  WeatherDataForOneLocationTestSuit:63 - com.jayway.restassured.internal.RestAssuredResponseImpl@74a6a609
+2017-11-10 16:32:47 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:32:47 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:32:47 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:32:48 INFO  Log:16 - Respone code: 200
+2017-11-10 16:33:18 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:33:18 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:33:18 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:33:19 INFO  Log:16 - Respone code: 200
+2017-11-10 16:33:19 INFO  Log:16 - Response is
+: {
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+2017-11-10 16:34:00 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:34:00 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:34:00 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:34:01 INFO  Log:16 - Respone code: 200
+2017-11-10 16:34:01 INFO  Log:16 - Response is
+: com.jayway.restassured.internal.RestAssuredResponseImpl@10993713
+2017-11-10 16:42:07 INFO  Log:16 - Performing weatherDataForOneLocationByCityName API call
+2017-11-10 16:42:07 INFO  Log:16 - Request URL: /json
+2017-11-10 16:42:07 INFO  Log:16 - [query parameter] cityName: London
+2017-11-10 16:42:07 INFO  Log:16 - [query parameter] appId: b1b15e88fa797225412429c1c50c122a1
+2017-11-10 16:42:08 INFO  Log:16 - Respone code: 200
+2017-11-10 16:42:08 INFO  Log:16 - Response is
+: com.jayway.restassured.internal.RestAssuredResponseImpl@10993713

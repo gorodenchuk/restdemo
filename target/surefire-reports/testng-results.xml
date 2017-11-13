@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test runner" duration-ms="1269" started-at="2017-11-10T10:21:27Z" finished-at="2017-11-10T10:21:28Z">
+  <suite name="Test runner" duration-ms="2320" started-at="2017-11-11T15:27:30Z" finished-at="2017-11-11T15:27:32Z">
     <groups>
     </groups>
-    <test name="Package with subpackages" duration-ms="1269" started-at="2017-11-10T10:21:27Z" finished-at="2017-11-10T10:21:28Z">
-      <class name="httprestassure.Test3">
-        <test-method status="PASS" signature="test_05()[pri:0, instance:httprestassure.Test3@2bbf4b8b]" name="test_05" duration-ms="1254" started-at="2017-11-10T12:21:27Z" finished-at="2017-11-10T12:21:28Z">
+    <test name="Package with subpackages" duration-ms="2320" started-at="2017-11-11T15:27:30Z" finished-at="2017-11-11T15:27:32Z">
+      <class name="currentweatherdata.WeatherDataForOneLocationTestSuit">
+        <test-method status="PASS" signature="setupHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="setupHttpClientTests" is-config="true" duration-ms="12" started-at="2017-11-11T17:27:30Z" finished-at="2017-11-11T17:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupHttpClientTests -->
+        <test-method status="PASS" signature="test_05()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="test_05" duration-ms="2285" started-at="2017-11-11T17:27:30Z" finished-at="2017-11-11T17:27:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_05 -->
-      </class> <!-- httprestassure.Test3 -->
+        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2017-11-11T17:27:32Z" finished-at="2017-11-11T17:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHttpClientTests -->
+      </class> <!-- currentweatherdata.WeatherDataForOneLocationTestSuit -->
     </test> <!-- Package with subpackages -->
   </suite> <!-- Test runner -->
 </testng-results>

@@ -14,6 +14,7 @@ public class TestBase {
                 "/data/2.5");
     }
 
+
     @AfterClass
     public void tearDownHttpClientTests() {
         httpClient1.resetClientProps();

@@ -13,7 +13,10 @@ import static com.jayway.restassured.RestAssured.given;
 
 public class CurrentWeatherDataForOneLocation extends ApiCall{
 
-    public static Response weatherDataForOneLocationByCityName (String q, String appid) throws IOException {
+    static Response response;
+    static RestAssuredHttpClient restAssuredHttpClient;
+
+    public static Response weatherDataForOneLocationByCityName (String q, String appid) throws Exception {
         Log.info("Performing weatherDataForOneLocationByCityName API call");
         Log.info("[query parameter] cityName: " + q);
         Log.info("[query parameter] appId: " + appid);
@@ -23,11 +26,16 @@ public class CurrentWeatherDataForOneLocation extends ApiCall{
         parameters.put("q", q);
         parameters.put("appid", appid);
 
-        Response response =
-                given().
-                        parameters(parameters).
-                        when().
-                get("http://samples.openweathermap.org/data/2.5/weather");
+        restAssuredHttpClient = new RestAssuredHttpClient("http://samples.openweathermap.org",
+                    "/data/2.5");
+
+        response = restAssuredHttpClient.callHttpGet("/weather", parameters);
+
+//        Response response =
+//                given().
+//                        parameters(parameters).
+//                        when().
+//                get("http://samples.openweathermap.org/data/2.5/weather");
 
         Log.info("Respone code: " + response.getStatusCode());
         Log.info("Response is\n: " + response.prettyPeek());
@@ -35,3 +43,5 @@ public class CurrentWeatherDataForOneLocation extends ApiCall{
     }
 
 }
+//restassure.log.all
+//        RequestSpecification

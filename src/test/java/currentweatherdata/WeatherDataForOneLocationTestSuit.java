@@ -20,13 +20,14 @@ public class WeatherDataForOneLocationTestSuit extends TestBase {
 
 
     private static Logger Log = Logger.getLogger(WeatherDataForOneLocationTestSuit.class.getName());
+    Response response;
 
     @Test
     public void test_05() throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         int expLondonWeatherId = 2643743;
 
-        Response response = CurrentWeatherDataForOneLocation.
+        response = CurrentWeatherDataForOneLocation.
                 weatherDataForOneLocationByCityName("London", "b1b15e88fa797225412429c1c50c122a1");
 
         int responseCode = response.statusCode();

@@ -57,8 +57,12 @@ public class RestAssuredHttpClient {
 		return basePath;
 	}
 
-	public String getBaseUrl() {
+	public String getBaseUrlLocal() {
 		return getBaseUri() + ":" + getBasePort() + getBasePath();
+	}
+
+	public String getBaseUrl() {
+		return getBaseUri() + getBasePath();
 	}
 
 	@SuppressWarnings("unused")
@@ -120,7 +124,7 @@ public class RestAssuredHttpClient {
 	public Response callHttpGet(String endPointUrl, Map<String, String> params) {
 		Response response = null;
 		try {
-			response = given().parameters(params).get(new URL(getBaseUrl() + endPointUrl));
+			response = given().parameters(params).when().get(new URL(getBaseUrl() + endPointUrl));
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test_runner">
-                    <span>C:\Users\Nazar_Gorodenchuk\workplace\restdemo\src\test\resources\testng\testng.xml</span>
+                    <span>C:\Users\gorod\workspace\restdemo\src\test\resources\testng\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Test_runner">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_runner" title="httprestassure.Test3" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_runner" title="currentweatherdata.WeatherDataForOneLocationTestSuit" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_runner -->
@@ -120,7 +120,7 @@
           <div class="suite-Test_runner-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">httprestassure.Test3</span>
+              <span class="class-name">currentweatherdata.WeatherDataForOneLocationTestSuit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -135,7 +135,7 @@
         </div> <!-- panel Test_runner -->
         <div panel-name="test-xml-Test_runner" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Nazar_Gorodenchuk\workplace\restdemo\src\test\resources\testng\testng.xml</span>
+            <span class="header-content">C:\Users\gorod\workspace\restdemo\src\test\resources\testng\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test runner&quot; parallel=&quot;classes&quot;&gt;
   &lt;test name=&quot;Package with subpackages&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;httprestassure.Test3&quot;/&gt;
+      &lt;class name=&quot;currentweatherdata.WeatherDataForOneLocationTestSuit&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Package with subpackages --&gt;
 &lt;/suite&gt; &lt;!-- Test runner --&gt;
@@ -187,13 +187,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_05')
-data.setCell(0, 2, 'httprestassure.Test3')
-data.setCell(0, 3, 1254);
+data.setCell(0, 2, 'currentweatherdata.WeatherDataForOneLocationTestSuit')
+data.setCell(0, 3, 2285);
 window.suiteTableData['Test_runner']= { tableData: data, tableDiv: 'times-div-Test_runner'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Test_runner">
               </div> <!-- times-div-Test_runner -->
             </div> <!-- times-div -->
@@ -219,11 +219,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">httprestassure.Test3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">currentweatherdata.WeatherDataForOneLocationTestSuit</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupHttpClientTests</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_05</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownHttpClientTests</span>
+                <span class="method-start">2308 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

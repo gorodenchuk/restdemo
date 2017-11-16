@@ -1,50 +1,53 @@
 {
-  "uid" : "bb61a25367067457",
-  "name" : "test_05",
-  "title" : "Test 05",
+  "uid" : "1148ec1b1b0a6303",
+  "name" : "checkStatusCodeOfRequestWithValidData",
+  "title" : "Check status code of request with valid data",
   "time" : {
-    "start" : 1510850083741,
-    "stop" : 1510850085872,
-    "duration" : 2131
+    "start" : 1510870666820,
+    "stop" : 1510870666915,
+    "duration" : 95
   },
   "summary" : {
     "attachments" : 2,
     "steps" : 0
   },
   "failure" : null,
-  "description" : null,
+  "description" : {
+    "value" : "Request with valid data in cityName and appid parameters. Response should be 200",
+    "type" : "TEXT"
+  },
   "severity" : "NORMAL",
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "cfe11e3364344089",
+    "uid" : "b61d5a21dac4c338",
     "name" : "Test runner : Package with subpackages",
     "title" : "Test runner : Package with subpackages"
   },
   "steps" : [ ],
   "attachments" : [ {
     "title" : "request",
-    "source" : "70daedf1-bb25-4811-90c0-f4e4e4555e2e-attachment.txt",
+    "source" : "3557e9fa-011b-439b-82d3-cd15263ad443-attachment.txt",
     "type" : "text/plain",
     "size" : 365,
-    "uid" : "e4ba96ffca6b45d2"
+    "uid" : "e09623d732fa21f5"
   }, {
     "title" : "response",
-    "source" : "449158e1-f3f5-4790-875d-c0a76191340e-attachment.txt",
+    "source" : "d3ccd854-4f00-4ab1-b997-e9302ad3bb8c-attachment.txt",
     "type" : "text/plain",
     "size" : 1253,
-    "uid" : "723681e2dbb2af4c"
+    "uid" : "e879a206d29d4462"
   } ],
   "issues" : [ ],
   "labels" : [ {
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "thread",
-    "value" : "17084@EPUALVIW0912.TestNG-test=Package with subpackages-1(14)"
-  }, {
     "name" : "host",
-    "value" : "EPUALVIW0912"
+    "value" : "DESKTOP-14LIAQ3"
+  }, {
+    "name" : "thread",
+    "value" : "8740@DESKTOP-14LIAQ3.TestNG-test=Package with subpackages-1(14)"
   }, {
     "name" : "framework",
     "value" : "TestNG"

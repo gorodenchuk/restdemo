@@ -126,7 +126,7 @@ public class RestAssuredHttpClient {
 	public Response callHttpGet(String endPointUrl) {
 		Response response = null;
 		try {
-			response = given().get(new URL(getBaseUrl() + endPointUrl));
+			response = given().get(new URL(getBaseUrl() + endPointUrl)).prettyPeek();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

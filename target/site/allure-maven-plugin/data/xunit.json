@@ -1,35 +1,79 @@
 {
   "time" : {
-    "start" : 1510850083741,
-    "stop" : 1510850085872,
-    "duration" : 2131
+    "start" : 1510870662889,
+    "stop" : 1510870667318,
+    "duration" : 4429
   },
   "testSuites" : [ {
-    "uid" : "cfe11e3364344089",
+    "uid" : "b61d5a21dac4c338",
     "name" : "Test runner : Package with subpackages",
     "title" : "Test runner : Package with subpackages",
     "time" : {
-      "start" : 1510850083741,
-      "stop" : 1510850085872,
-      "duration" : 2131
+      "start" : 1510870662889,
+      "stop" : 1510870667318,
+      "duration" : 4429
     },
     "statistic" : {
-      "total" : 1,
-      "passed" : 1,
+      "total" : 5,
+      "passed" : 2,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 0,
+      "failed" : 3,
       "broken" : 0
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "bb61a25367067457",
-      "name" : "test_05",
-      "title" : "Test 05",
+      "uid" : "6703c1f72237423e",
+      "name" : "checkStatusCodeOfRequestWithInvalidCityName",
+      "title" : "Check status code of request with invalid city name",
       "time" : {
-        "start" : 1510850083741,
-        "stop" : 1510850085872,
-        "duration" : 2131
+        "start" : 1510870662889,
+        "stop" : 1510870666615,
+        "duration" : 3726
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "a533861ca8c0da90",
+      "name" : "checkStatusCodeOfRequestWithMissedCityName",
+      "title" : "Check status code of request with missed city name",
+      "time" : {
+        "start" : 1510870666617,
+        "stop" : 1510870666734,
+        "duration" : 117
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "72babcd71a202ae5",
+      "name" : "checkStatusCodeOfRequestWithMissedCityNameAndAppId",
+      "title" : "Check status code of request with missed city name and app id",
+      "time" : {
+        "start" : 1510870666735,
+        "stop" : 1510870666819,
+        "duration" : 84
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "1148ec1b1b0a6303",
+      "name" : "checkStatusCodeOfRequestWithValidData",
+      "title" : "Check status code of request with valid data",
+      "time" : {
+        "start" : 1510870666820,
+        "stop" : 1510870666915,
+        "duration" : 95
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fa22bca7dde3f624",
+      "name" : "checkWeatherIdWithValidData",
+      "title" : "Check weather id with valid data",
+      "time" : {
+        "start" : 1510870666919,
+        "stop" : 1510870667318,
+        "duration" : 399
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

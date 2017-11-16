@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Server: openresty/1.9.7.1
+Date: Thu, 16 Nov 2017 22:17:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"c2982d5bd049cb3b75a04c2956d513ec"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: f6e0239d-2a7f-4e58-b612-b7b7c04edb8d
+X-Runtime: 0.000921
+Content-Encoding: gzip
+
+{
+    "cod": 401,
+    "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."
+}

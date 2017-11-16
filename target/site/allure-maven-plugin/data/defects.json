@@ -2,7 +2,54 @@
   "defectsList" : [ {
     "title" : "Product defects",
     "status" : "FAILED",
-    "defects" : [ ]
+    "defects" : [ {
+      "uid" : "d0e7dbf0d224455c",
+      "failure" : {
+        "message" : "AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]",
+        "stackTrace" : "java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]\n\tat org.testng.Assert.fail(Assert.java:93)\n\tat org.testng.Assert.failNotEquals(Assert.java:512)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:134)\n\tat org.testng.Assert.assertEquals(Assert.java:115)\n\tat org.testng.Assert.assertEquals(Assert.java:388)\n\tat currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName(WeatherDataForOneLocationByCityNameTestSuit.java:46)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:661)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+      },
+      "testCases" : [ {
+        "uid" : "6703c1f72237423e",
+        "name" : "checkStatusCodeOfRequestWithInvalidCityName",
+        "title" : "Check status code of request with invalid city name",
+        "time" : {
+          "start" : 1510870662889,
+          "stop" : 1510870666615,
+          "duration" : 3726
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    }, {
+      "uid" : "61eabae0b0cf539e",
+      "failure" : {
+        "message" : "AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]",
+        "stackTrace" : "java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]\n\tat org.testng.Assert.fail(Assert.java:93)\n\tat org.testng.Assert.failNotEquals(Assert.java:512)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:134)\n\tat org.testng.Assert.assertEquals(Assert.java:115)\n\tat org.testng.Assert.assertEquals(Assert.java:388)\n\tat currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName(WeatherDataForOneLocationByCityNameTestSuit.java:57)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:497)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:661)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+      },
+      "testCases" : [ {
+        "uid" : "a533861ca8c0da90",
+        "name" : "checkStatusCodeOfRequestWithMissedCityName",
+        "title" : "Check status code of request with missed city name",
+        "time" : {
+          "start" : 1510870666617,
+          "stop" : 1510870666734,
+          "duration" : 117
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "72babcd71a202ae5",
+        "name" : "checkStatusCodeOfRequestWithMissedCityNameAndAppId",
+        "title" : "Check status code of request with missed city name and app id",
+        "time" : {
+          "start" : 1510870666735,
+          "stop" : 1510870666819,
+          "duration" : 84
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
   }, {
     "title" : "Test defects",
     "status" : "BROKEN",

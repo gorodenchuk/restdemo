@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Package with subpackages</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 16 18:34:38 EET 2017</td>
+<td>Started on:</td><td>Fri Nov 17 00:17:30 EET 2017</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7334 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16632 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,107 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName()'><b>checkStatusCodeOfRequestWithInvalidCityName</b><br>Test class: currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit<br>Test method: Request with invalid cityName and valid appid parameters. Response should be 404</td>
+<td><div><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName(WeatherDataForOneLocationByCityNameTestSuit.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace75814369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace75814369'><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName(WeatherDataForOneLocationByCityNameTestSuit.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>3</td>
+<td>currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037</td></tr>
+<tr>
+<td title='currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName()'><b>checkStatusCodeOfRequestWithMissedCityName</b><br>Test class: currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit<br>Test method: Request with missed cityName but valid appid parameters. Response should be 404</td>
+<td><div><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName(WeatherDataForOneLocationByCityNameTestSuit.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace492473203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace492473203'><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName(WeatherDataForOneLocationByCityNameTestSuit.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037</td></tr>
+<tr>
+<td title='currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityNameAndAppId()'><b>checkStatusCodeOfRequestWithMissedCityNameAndAppId</b><br>Test class: currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit<br>Test method: Request with missed cityName and appid parameters. Response should be 404</td>
+<td><div><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityNameAndAppId(WeatherDataForOneLocationByCityNameTestSuit.java:65)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace987883982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987883982'><pre>java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityNameAndAppId(WeatherDataForOneLocationByCityNameTestSuit.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +176,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='currentweatherdata.WeatherDataForOneLocationTestSuit.test_05()'><b>test_05</b><br>Test class: currentweatherdata.WeatherDataForOneLocationTestSuit</td>
+<td title='currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithValidData()'><b>checkStatusCodeOfRequestWithValidData</b><br>Test class: currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit<br>Test method: Request with valid data in cityName and appid parameters. Response should be 200</td>
 <td></td>
-<td>1</td>
-<td>currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2</td></tr>
+<td>0</td>
+<td>currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037</td></tr>
+<tr>
+<td title='currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkWeatherIdWithValidData()'><b>checkWeatherIdWithValidData</b><br>Test class: currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit<br>Test method: Request with valid data in cityName and appid parameters. WeatherID shoud be 2643743</td>
+<td></td>
+<td>0</td>
+<td>currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037</td></tr>
 </table><p>
 </body>
 </html>

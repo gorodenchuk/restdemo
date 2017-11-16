@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="8.619" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="19.336" tests="5" errors="0" skipped="0" failures="3">
   <properties>
-    <property name="idea.version" value="2017.2.5"/>
+    <property name="idea.version" value="2017.1.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
-    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="user.country.format" value="UA"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Nazar_Gorodenchuk\workplace\restdemo"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\gorod\workspace\restdemo"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Nazar_Gorodenchuk\workplace\restdemo"/>
-    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="user.dir" value="C:\Users\gorod\workspace\restdemo"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\NAZAR_~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\gorod\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.5\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\apache-maven-3.5.0\bin;C:\Program Files\apache-maven-3.5.0\bin;C:\Program Files\tomcat\bin;C:\Users\Nazar_Gorodenchuk\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Calibre2\;C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files\Git\bin\;C:\Program Files (x86)\opencv\build\x64\vc14\bin\;C:\android-sdk-windows\platform-tools;C:\Program Files\nodejs\C:\Program Files\Java\jdk1.8.0_60\bin;C:\C:\ant\bin;C:\Program Files (x86)\Jenkins\plugins\allure-commandline\bin;C:\Program Files\apache-jmeter-3.1bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\gorod\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Nazar_Gorodenchuk"/>
+    <property name="user.home" value="C:\Users\gorod"/>
     <property name="user.timezone" value="Europe/Helsinki"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="Nazar_Gorodenchuk"/>
-    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\lib\idea_rt.jar"/>
+    <property name="user.name" value="gorod"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.5\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.5\lib\idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_151\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2.5 clean test site"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_60\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1.5 clean test site"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
+    <property name="user.language" value="ru"/>
+    <property name="user.language.format" value="uk"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_151"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.5\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,5 +63,122 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test_05" classname="currentweatherdata.WeatherDataForOneLocationTestSuit" time="2.152"/>
+  <testcase name="checkStatusCodeOfRequestWithInvalidCityName" classname="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit" time="3.752">
+    <failure message="Actual statusCode doesn`t match with expected expected [404] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName(WeatherDataForOneLocationByCityNameTestSuit.java:46)
+</failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Server: openresty/1.9.7.1
+Date: Thu, 16 Nov 2017 22:17:43 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"e70c27085ed41de5321252b16c9582fe"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: d2ad6dfa-9ab8-40c7-8763-44f724795510
+X-Runtime: 0.001463
+Content-Encoding: gzip
+
+{
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "light intensity drizzle",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 280.32,
+        "pressure": 1012,
+        "humidity": 81,
+        "temp_min": 279.15,
+        "temp_max": 281.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.1,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1485789600,
+    "sys": {
+        "type": 1,
+        "id": 5091,
+        "message": 0.0103,
+        "country": "GB",
+        "sunrise": 1485762037,
+        "sunset": 1485794875
+    },
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="checkStatusCodeOfRequestWithMissedCityName" classname="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit" time="0.118">
+    <failure message="Actual statusCode doesn`t match with expected expected [401] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName(WeatherDataForOneLocationByCityNameTestSuit.java:57)
+</failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Server: openresty/1.9.7.1
+Date: Thu, 16 Nov 2017 22:17:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"5a26a9ba9743be7a7f7d95b80ca89341"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: fb04d291-b935-4981-9124-2d974eed0063
+X-Runtime: 0.003513
+Content-Encoding: gzip
+
+{
+    "error": "404"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="checkStatusCodeOfRequestWithMissedCityNameAndAppId" classname="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit" time="0.085">
+    <failure message="Actual statusCode doesn`t match with expected expected [401] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityNameAndAppId(WeatherDataForOneLocationByCityNameTestSuit.java:65)
+</failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Server: openresty/1.9.7.1
+Date: Thu, 16 Nov 2017 22:17:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"c2982d5bd049cb3b75a04c2956d513ec"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: f6e0239d-2a7f-4e58-b612-b7b7c04edb8d
+X-Runtime: 0.000921
+Content-Encoding: gzip
+
+{
+    "cod": 401,
+    "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."
+}
+]]></system-out>
+  </testcase>
+  <testcase name="checkStatusCodeOfRequestWithValidData" classname="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit" time="0.095"/>
+  <testcase name="checkWeatherIdWithValidData" classname="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit" time="0.4"/>
 </testsuite>

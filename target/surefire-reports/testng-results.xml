@@ -1,25 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test runner" duration-ms="7334" started-at="2017-11-16T16:34:38Z" finished-at="2017-11-16T16:34:45Z">
+  <suite name="Test runner" duration-ms="16632" started-at="2017-11-16T22:17:30Z" finished-at="2017-11-16T22:17:47Z">
     <groups>
     </groups>
-    <test name="Package with subpackages" duration-ms="7334" started-at="2017-11-16T16:34:38Z" finished-at="2017-11-16T16:34:45Z">
-      <class name="currentweatherdata.WeatherDataForOneLocationTestSuit">
-        <test-method status="PASS" signature="setupHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="setupHttpClientTests" is-config="true" duration-ms="15" started-at="2017-11-16T18:34:43Z" finished-at="2017-11-16T18:34:43Z">
+    <test name="Package with subpackages" duration-ms="16632" started-at="2017-11-16T22:17:30Z" finished-at="2017-11-16T22:17:47Z">
+      <class name="currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit">
+        <test-method status="PASS" signature="setupHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="setupHttpClientTests" is-config="true" duration-ms="28" started-at="2017-11-17T00:17:42Z" description="Configure Base Url before test" finished-at="2017-11-17T00:17:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHttpClientTests -->
-        <test-method status="PASS" signature="test_05()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="test_05" duration-ms="1559" started-at="2017-11-16T18:34:43Z" finished-at="2017-11-16T18:34:45Z">
+        <test-method status="FAIL" signature="checkStatusCodeOfRequestWithInvalidCityName()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="checkStatusCodeOfRequestWithInvalidCityName" duration-ms="3307" started-at="2017-11-17T00:17:42Z" description="Request with invalid cityName and valid appid parameters. Response should be 404" finished-at="2017-11-17T00:17:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual statusCode doesn`t match with expected expected [404] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithInvalidCityName(WeatherDataForOneLocationByCityNameTestSuit.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_05 -->
-        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2017-11-16T18:34:45Z" finished-at="2017-11-16T18:34:45Z">
+        </test-method> <!-- checkStatusCodeOfRequestWithInvalidCityName -->
+        <test-method status="FAIL" signature="checkStatusCodeOfRequestWithMissedCityName()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="checkStatusCodeOfRequestWithMissedCityName" duration-ms="104" started-at="2017-11-17T00:17:46Z" description="Request with missed cityName but valid appid parameters. Response should be 404" finished-at="2017-11-17T00:17:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual statusCode doesn`t match with expected expected [401] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityName(WeatherDataForOneLocationByCityNameTestSuit.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeOfRequestWithMissedCityName -->
+        <test-method status="FAIL" signature="checkStatusCodeOfRequestWithMissedCityNameAndAppId()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="checkStatusCodeOfRequestWithMissedCityNameAndAppId" duration-ms="80" started-at="2017-11-17T00:17:46Z" description="Request with missed cityName and appid parameters. Response should be 404" finished-at="2017-11-17T00:17:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual statusCode doesn`t match with expected expected [401] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit.checkStatusCodeOfRequestWithMissedCityNameAndAppId(WeatherDataForOneLocationByCityNameTestSuit.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeOfRequestWithMissedCityNameAndAppId -->
+        <test-method status="PASS" signature="checkStatusCodeOfRequestWithValidData()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="checkStatusCodeOfRequestWithValidData" duration-ms="88" started-at="2017-11-17T00:17:46Z" description="Request with valid data in cityName and appid parameters. Response should be 200" finished-at="2017-11-17T00:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeOfRequestWithValidData -->
+        <test-method status="PASS" signature="checkWeatherIdWithValidData()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="checkWeatherIdWithValidData" duration-ms="390" started-at="2017-11-17T00:17:46Z" description="Request with valid data in cityName and appid parameters. WeatherID shoud be 2643743" finished-at="2017-11-17T00:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkWeatherIdWithValidData -->
+        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit@7e747037]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2017-11-17T00:17:47Z" description="Reset Client Props after test" finished-at="2017-11-17T00:17:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownHttpClientTests -->
-      </class> <!-- currentweatherdata.WeatherDataForOneLocationTestSuit -->
+      </class> <!-- currentweatherdata.WeatherDataForOneLocationByCityNameTestSuit -->
     </test> <!-- Package with subpackages -->
   </suite> <!-- Test runner -->
 </testng-results>

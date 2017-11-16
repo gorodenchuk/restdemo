@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: openresty/1.9.7.1
+Date: Thu, 16 Nov 2017 22:17:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"5a26a9ba9743be7a7f7d95b80ca89341"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: fb04d291-b935-4981-9124-2d974eed0063
+X-Runtime: 0.003513
+Content-Encoding: gzip
+
+{
+    "error": "404"
+}

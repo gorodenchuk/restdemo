@@ -15,14 +15,14 @@ public class TestBase {
     protected Response response;
     protected ObjectMapper objectMapper = new ObjectMapper();
 
-    @BeforeClass
+    @BeforeClass (description = "Configure Base Url before test")
     public void setupHttpClientTests() throws Exception {
         httpClient1 = new RestAssuredHttpClient("http://samples.openweathermap.org",
                 "/data/2.5");
     }
 
 
-    @AfterClass
+    @AfterClass (description = "Reset Client Props after test")
     public void tearDownHttpClientTests() {
         httpClient1.resetClientProps();
     }

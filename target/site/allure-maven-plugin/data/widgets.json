@@ -2,17 +2,17 @@
   "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
   "data" : [ {
     "statistic" : {
-      "total" : 1,
-      "passed" : 1,
+      "total" : 5,
+      "passed" : 2,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 0,
+      "failed" : 3,
       "broken" : 0
     },
     "time" : {
-      "start" : 1510850083741,
-      "stop" : 1510850085872,
-      "duration" : 2131
+      "start" : 1510870662889,
+      "stop" : 1510870667318,
+      "duration" : 4429
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,9 +20,13 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 0,
-      "message" : "There are no defects!",
-      "status" : "PASSED"
+      "count" : 2,
+      "message" : "AssertionError: Actual statusCode doesn`t match with expected expected [401] but found [200]",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Actual statusCode doesn`t match with expected expected [404] but found [200]",
+      "status" : "FAILED"
     } ]
   }, {
     "name" : "xunit",
@@ -30,11 +34,11 @@
     "data" : [ {
       "title" : "Test runner : Package with subpackages",
       "statistic" : {
-        "total" : 1,
-        "passed" : 1,
+        "total" : 5,
+        "passed" : 2,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 0,
+        "failed" : 3,
         "broken" : 0
       }
     } ]
@@ -44,11 +48,11 @@
     "data" : [ {
       "title" : "Without feature",
       "statistic" : {
-        "total" : 1,
-        "passed" : 1,
+        "total" : 5,
+        "passed" : 2,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 0,
+        "failed" : 3,
         "broken" : 0
       }
     } ]

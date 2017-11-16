@@ -1,0 +1,62 @@
+{
+  "uid" : "fa22bca7dde3f624",
+  "name" : "checkWeatherIdWithValidData",
+  "title" : "Check weather id with valid data",
+  "time" : {
+    "start" : 1510870666919,
+    "stop" : 1510870667318,
+    "duration" : 399
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Request with valid data in cityName and appid parameters. WeatherID shoud be 2643743",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b61d5a21dac4c338",
+    "name" : "Test runner : Package with subpackages",
+    "title" : "Test runner : Package with subpackages"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "request",
+    "source" : "c0bcbbda-87c8-4e5a-929a-d59471e6b5c7-attachment.txt",
+    "type" : "text/plain",
+    "size" : 365,
+    "uid" : "84514dfb1108b9e2"
+  }, {
+    "title" : "response",
+    "source" : "90244657-4c3a-47f6-9d36-065a884019fb-attachment.txt",
+    "type" : "text/plain",
+    "size" : 1253,
+    "uid" : "5bad58f18e41a2b4"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-14LIAQ3"
+  }, {
+    "name" : "thread",
+    "value" : "8740@DESKTOP-14LIAQ3.TestNG-test=Package with subpackages-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Test runner : Package with subpackages"
+  }, {
+    "name" : "suite-name",
+    "value" : "Test runner : Package with subpackages"
+  } ],
+  "parameters" : [ ]
+}

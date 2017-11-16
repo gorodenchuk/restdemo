@@ -1,11 +1,10 @@
-apicalls\ApiCall.class
 utils\Log.class
 weatherResponse\Main.class
-apicalls\CurrentWeatherDataForOneLocation.class
 weatherResponse\Weather.class
 weatherResponse\Sys.class
 weatherResponse\Wind.class
 weatherResponse\Clouds.class
+utils\LogListener.class
 assure\RestAssuredHttpClient.class
 weatherResponse\Coord.class
 weatherResponse\WeatherByCityResponseModel.class

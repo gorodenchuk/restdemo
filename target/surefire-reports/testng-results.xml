@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test runner" duration-ms="2320" started-at="2017-11-11T15:27:30Z" finished-at="2017-11-11T15:27:32Z">
+  <suite name="Test runner" duration-ms="7334" started-at="2017-11-16T16:34:38Z" finished-at="2017-11-16T16:34:45Z">
     <groups>
     </groups>
-    <test name="Package with subpackages" duration-ms="2320" started-at="2017-11-11T15:27:30Z" finished-at="2017-11-11T15:27:32Z">
+    <test name="Package with subpackages" duration-ms="7334" started-at="2017-11-16T16:34:38Z" finished-at="2017-11-16T16:34:45Z">
       <class name="currentweatherdata.WeatherDataForOneLocationTestSuit">
-        <test-method status="PASS" signature="setupHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="setupHttpClientTests" is-config="true" duration-ms="12" started-at="2017-11-11T17:27:30Z" finished-at="2017-11-11T17:27:30Z">
+        <test-method status="PASS" signature="setupHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="setupHttpClientTests" is-config="true" duration-ms="15" started-at="2017-11-16T18:34:43Z" finished-at="2017-11-16T18:34:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHttpClientTests -->
-        <test-method status="PASS" signature="test_05()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="test_05" duration-ms="2285" started-at="2017-11-11T17:27:30Z" finished-at="2017-11-11T17:27:32Z">
+        <test-method status="PASS" signature="test_05()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="test_05" duration-ms="1559" started-at="2017-11-16T18:34:43Z" finished-at="2017-11-16T18:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_05 -->
-        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@234bef66]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2017-11-11T17:27:32Z" finished-at="2017-11-11T17:27:32Z">
+        <test-method status="PASS" signature="tearDownHttpClientTests()[pri:0, instance:currentweatherdata.WeatherDataForOneLocationTestSuit@cfd5cd2]" name="tearDownHttpClientTests" is-config="true" duration-ms="1" started-at="2017-11-16T18:34:45Z" finished-at="2017-11-16T18:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownHttpClientTests -->

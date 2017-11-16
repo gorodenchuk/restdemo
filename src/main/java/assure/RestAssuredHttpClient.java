@@ -1,8 +1,14 @@
 package assure;
 
-import apicalls.ApiCall;
+//import apicalls.ApiCall;
 import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.builder.RequestSpecBuilder;
+import com.jayway.restassured.filter.log.LogDetail;
+import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
+import com.jayway.restassured.specification.RequestSpecification;
+import org.apache.log4j.Logger;
+import utils.Log;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,6 +18,7 @@ import static com.jayway.restassured.RestAssured.given;
 
 public class RestAssuredHttpClient {
 
+	private static Logger Log = Logger.getLogger(RestAssuredHttpClient.class.getName());
 	private String baseUri;
 	private int basePort;
 	private String basePath;
@@ -44,6 +51,12 @@ public class RestAssuredHttpClient {
 		this.basePath = "";
 	}
 
+//	public RequestSpecification requestSpecification = new RequestSpecBuilder()
+//			.addHeader("Accept", "application/json")
+//			.setBaseUri("http://samples.openweathermap.org/data/2.5")
+//			.log(LogDetail.ALL)
+//			.setContentType(ContentType.JSON)
+//			.build();
 
 	public String getBaseUri() {
 		return baseUri;
@@ -124,7 +137,8 @@ public class RestAssuredHttpClient {
 	public Response callHttpGet(String endPointUrl, Map<String, String> params) {
 		Response response = null;
 		try {
-			response = given().parameters(params).when().get(new URL(getBaseUrl() + endPointUrl));
+			response = given().parameters(params).when().get(new URL(getBaseUrl() + endPointUrl)).prettyPeek();
+
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,0 +1,59 @@
+{
+  "uid" : "bb61a25367067457",
+  "name" : "test_05",
+  "title" : "Test 05",
+  "time" : {
+    "start" : 1510850083741,
+    "stop" : 1510850085872,
+    "duration" : 2131
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "cfe11e3364344089",
+    "name" : "Test runner : Package with subpackages",
+    "title" : "Test runner : Package with subpackages"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "request",
+    "source" : "70daedf1-bb25-4811-90c0-f4e4e4555e2e-attachment.txt",
+    "type" : "text/plain",
+    "size" : 365,
+    "uid" : "e4ba96ffca6b45d2"
+  }, {
+    "title" : "response",
+    "source" : "449158e1-f3f5-4790-875d-c0a76191340e-attachment.txt",
+    "type" : "text/plain",
+    "size" : 1253,
+    "uid" : "723681e2dbb2af4c"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "17084@EPUALVIW0912.TestNG-test=Package with subpackages-1(14)"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0912"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Test runner : Package with subpackages"
+  }, {
+    "name" : "suite-name",
+    "value" : "Test runner : Package with subpackages"
+  } ],
+  "parameters" : [ ]
+}

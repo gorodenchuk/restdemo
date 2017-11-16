@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1510850083354" stop="1510850085903" version="1.4.23" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Test runner : Package with subpackages</name>
+    <title>Test runner : Package with subpackages</title>
+    <test-cases>
+        <test-case start="1510850083741" stop="1510850085872" status="passed">
+            <name>test_05</name>
+            <steps/>
+            <attachments>
+                <attachment title="request" source="70daedf1-bb25-4811-90c0-f4e4e4555e2e-attachment.txt" type="text/plain"/>
+                <attachment title="response" source="449158e1-f3f5-4790-875d-c0a76191340e-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="host" value="EPUALVIW0912"/>
+                <label name="thread" value="17084@EPUALVIW0912.TestNG-test=Package with subpackages-1(14)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
